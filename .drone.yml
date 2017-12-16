@@ -1,0 +1,10 @@
+workspace:
+ base: /go
+ path: src/github.com/kubeciio/koki
+
+pipeline:
+  koki-short:
+    image: kokster/kubeci-plugin:v0.3.0
+    pull: true
+    files:
+    - deployment.yaml
